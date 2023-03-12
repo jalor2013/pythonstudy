@@ -1,19 +1,33 @@
-#print('静夜思’‘\n’‘李白’‘\n’‘床前明月光’’\n’‘疑是地上霜’‘\n’‘举头望明月’‘\n’‘低头思故乡’）
-print(1)
-print(2)
-print(3)
-print(4)
-print(5)
-print(6)
-print(7)
-print(8)
-print(9)
-print(10)
-print('      *')
-print('    *   *')
-print('   *     *')
-print(' *    *   *')
-print('*   *   *   *')
-print('      *        ')
-print('      *')
-print('      *')
+import random
+import os
+
+print('            *')
+print('          *   *')
+print('         *     *')
+print('        *    *  *')
+print('       *   *  *  *')
+print('      *   *    *  *')
+print('     *   *      *  *')
+print('    *   *    *      *')
+print('   *   *         *   *')
+print('  *   *           *   *')
+print(' *   *             *   *')
+print('             *        ')
+print('             *')
+print('             *')
+
+os.system("clear")
+
+age = random.randint(1,20)
+print('小朋友，你知道我几岁吗？来猜一猜吧！')
+while True:
+    a = int(input("\n输入岁数， enter确认\n"))
+    if(a > age):
+      print('猜大了，再试试')
+    elif (a < age):
+        print('猜小了，再试试')
+    else:
+        print("你猜对了，你好棒！")
+        break;
+    
+
